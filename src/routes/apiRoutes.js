@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getMangas, getMangasWhere } from '../../controllers/mangaController.js';
+import { getMangas, getMangasWhere } from '../controllers/mangaController.js';
 
 const router = Router();
 router.get('/mangas', getMangas);
