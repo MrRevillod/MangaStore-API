@@ -7,6 +7,8 @@ export const getMangas = async (req, res) => {
         const Mangas = result[0];
         const data = res.status(200).json(Mangas);
 
+        console.log(Mangas);
+
     } catch (error) { res.status(500).json({ message: error.message }) }
 }
 
