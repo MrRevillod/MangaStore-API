@@ -3,7 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 
 import { apiRoutes } from './routes/apiRoutes.js';
-import { API_PORT } from './config.js';
+import { PORT } from './config.js';
 
 const app = express();
 
@@ -19,6 +19,6 @@ app.use((req, res, next) => {
     res.status(404).json({ message: "Not found" })
 });
 
-app.listen(API_PORT, () => {
+app.listen(PORT, () => {
     console.log("ExpressJS server APi started");
 });
